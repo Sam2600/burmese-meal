@@ -22,7 +22,7 @@ export const MealDetail = () => {
       {meal ? (
         <div className="card rounded my-10 w-11/12 mx-auto border lg:card-side bg-base-100 shadow-xl">
           <figure>
-            <img src={`/public/img/${meal.Name}.jpg`} className="" alt="" />
+            <img src={`/img/${meal.Name}.jpg`} className="" alt="" />
           </figure>
           <div className="card-body">
             <h2 className="card-title">{meal?.Name}</h2>
