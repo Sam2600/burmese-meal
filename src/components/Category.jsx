@@ -13,12 +13,12 @@ export const Category = () => {
   };
 
   return (
-    <div className="flex my-5 justify-evenly w-2/12 mx-auto border-b-2 border-b-orange-300 p-2">
+    <div className="flex my-7 justify-evenly w-2/12 mx-auto border-b-2 border-b-orange-300 p-2">
       <button
         onClick={() => handleClickCategory(1)}
         className={
           catID === 1
-            ? "font-semibold hover:text-orange-200 cursor-pointer active:text-orange-200"
+            ? "font-semibold hover:text-orange-200 cursor-pointer text-orange-400"
             : "font-semibold hover:text-orange-200 cursor-pointer"
         }
       >
@@ -29,7 +29,7 @@ export const Category = () => {
         onClick={() => handleClickCategory(2)}
         className={
           catID === 2
-            ? "font-semibold hover:text-orange-200 cursor-pointer active:text-orange-200"
+            ? "font-semibold hover:text-orange-200 cursor-pointer text-orange-400"
             : "font-semibold hover:text-orange-200 cursor-pointer"
         }
       >
