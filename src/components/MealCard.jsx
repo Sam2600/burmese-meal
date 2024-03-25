@@ -7,7 +7,7 @@ export const MealCard = ({ meal }) => {
       <NavLink to={`/meals/${meal.Guid}`}>
         <img
           className="w-full h-60 object-cover p-5"
-          src={`/src/img/${meal.Name}.jpg`}
+          src={`src/img/${meal.Name}.jpg`}
           alt={meal.Name}
         />
         <div className="px-6 pb-4">
