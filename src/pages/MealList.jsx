@@ -39,14 +39,24 @@ const MealList = () => {
   return (
     <div className="flex flex-col">
       <div id="meals-container" className="flex flex-wrap flex-row gap-5 py-5">
-        {mealList}
+        {paginatedMeals.length ? (
+          mealList
+        ) : (
+          <p className="text-pretty text-black text-xl rounded-md font-medium text-center p-5 border border-orange-300 mb-5 mx-auto">
+            There is no curry that you want!
+          </p>
+        )}
       </div>
       {/* Pagination */}
-      <Paginate
-        handlePageClick={handlePageClick}
-        mealsPerPage={mealsPerPage}
-        totalPages={totalPages}
-      />
+      {paginatedMeals.length ? (
+        <Paginate
+          handlePageClick={handlePageClick}
+          mealsPerPage={mealsPerPage}
+          totalPages={totalPages}
+        />
+      ) : (
+        <></>
+      )}
       {/* Pagination */}
     </div>
   );
