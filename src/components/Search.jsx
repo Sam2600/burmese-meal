@@ -23,18 +23,14 @@ export const Search = () => {
   };
 
   return (
-    <div className="join px-12 my-5">
-      <div>
-        <div>
-          <input
-            key={key}
-            onChange={(e) => setSearchKey(e.target.value)}
-            className="input input-bordered join-item"
-            placeholder="Search your appetit . . ."
-          />
-        </div>
-      </div>
-      <div className="indicator gap-2">
+    <div className="join px-12 mb-10 mt-5 flex flex-wrap items-center justify-start gap-4">
+      <div className=" flex items-center">
+        <input
+          key={key}
+          onChange={(e) => setSearchKey(e.target.value)}
+          className="input input-bordered join-item"
+          placeholder="Search your appetit . . ."
+        />
         <button
           type="button"
           onClick={handleOnClick}
@@ -43,13 +39,13 @@ export const Search = () => {
           <CiForkAndKnife className="text-xl" />
           Search
         </button>
-        <button
-          onClick={handleResetTypes}
-          className="btn transition-all text-white duration-300 join-item bg-orange-300 hover:text-orange-300 hover:bg-white hover:border hover:border-orange-300"
-        >
-          All Type
-        </button>
       </div>
+      <button
+        onClick={handleResetTypes}
+        className="btn transition-all text-white duration-300  bg-orange-300 hover:text-orange-300 hover:bg-white hover:border hover:border-orange-300"
+      >
+        All
+      </button>
     </div>
   );
 };

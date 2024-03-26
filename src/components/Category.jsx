@@ -13,7 +13,7 @@ export const Category = () => {
   };
 
   return (
-    <div className="flex my-7 justify-evenly w-2/12 mx-auto border-b-2 border-b-orange-300 p-2">
+    <div className="flex my-7 justify-evenly w-5/12 md:w-3/12 lg:w-3/12 mx-auto border-b-2 border-b-orange-300 p-2">
       <button
         onClick={() => handleClickCategory(1)}
         className={
